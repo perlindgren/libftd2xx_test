@@ -20,7 +20,7 @@ fn main() {
     let r = ft.read(&mut buf[..2]).unwrap();
 
     println!("r {}, buf {:x?}", r, &buf[..r]);
-    ft.set_clock(1000).unwrap();
+    ft.set_clock(15_000_000).unwrap();
 
     // pin mode 88 8b (output, direction)
     let (output, direction) = (0x88, 0x8b);
